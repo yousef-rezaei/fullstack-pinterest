@@ -1,9 +1,15 @@
-import React from "react";
-
+import LeftBar from "./components/leftBar/leftBar";
+import TopBar from "./components/topBar/topBar";
+import Gallery from "./components/gallery/gallery";
+import "./app.css";
 function App() {
   return (
-    <div>
-      <h1>Hello, React!</h1>
+    <div className="app">
+      <LeftBar />
+      <div className="content">
+        <TopBar />
+        <Gallery />
+      </div>
     </div>
   );
 }
